@@ -22,8 +22,20 @@ class Notes {
     return Notes()..id = id
       ..createdAt = createdAt
       ..updatedAt = DateTime.now()
-      ..title = content ?? this.title
+      ..title = title ?? this.title
       ..content = content ?? this.content
       ..status = status ?? this.status;
   }
+
+  Notes changeStatus(Id id){
+    final finalStatus = status == Status.pending ? Status.completed : Status.pending;
+
+    return Notes()..id = id
+      ..createdAt = createdAt
+      ..updatedAt = DateTime.now()
+      ..title = title ?? this.title
+      ..content = content ?? this.content
+      ..status = finalStatus;
+  }
+
 }
