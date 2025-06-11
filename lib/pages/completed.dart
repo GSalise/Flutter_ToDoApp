@@ -95,7 +95,7 @@ class _CompletedPageState extends State<CompletedPage> {
                             },
                           ),
                           IconButton(
-                            icon: Icon(Icons.check),
+                            icon: Icon(Icons.close),
                             onPressed: () {
                               _updateStatus(note: note);
                             },

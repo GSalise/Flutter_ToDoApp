@@ -80,7 +80,7 @@ class _NewToDoPageState extends State<NewToDoPage> {
 
           Expanded(
               child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 15),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Color(0xCCC1C1C1),
